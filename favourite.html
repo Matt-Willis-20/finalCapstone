@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- create the head -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Wanderlust</title>
+    <!-- Bootstrap CDN link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- External Stylesheet link -->
+    <link href="./styles/style.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+  </head>
+<body>
+    <!-- header to contain the site navigation -->
+    <header>
+      <!-- bootstrap navigation -->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <div class="container-fluid justify-content-between">
+                <a class="navbar-brand" href="./index.html">Wanderlust*</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav gap-4">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./favourite.html">Top Destinations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./wishlist.html">Travel Wish List</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./subscribe.html">Subscribe</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </header>
+    <!-- main content -->
+    <main>
+      <!-- hero content -->
+        <section class="hero favourite-hero">
+            <div class="hero__content-container rounded-4">
+                <h1 class="text-center">Top Travel Destinations</h1>
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                      <p><em>Travel opens your heart, broadens your mind, and fills your life with stories to tell.</em></p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Unknown, <cite title="Source Title">Inspirational Travel Quotes</cite>
+                    </figcaption>
+                  </figure>
+            </div>
+            <div class="hero__pointer">
+              <i class="fa-solid fa-arrow-down-long"></i>
+            </div>
+        </section>
+        <!-- Introduction content -->
+        <div class="introduction section-padding">
+            <p>First and foremost, I count myself extremely fortunate and privileged to be able to travel. I'm ever-grateful that I can a) afford to travel (although I work hard to save) and b) have access to safe transport options. This should not be taken for granted!</p>
+            <br>
+            <p>So, when I do find myself in a different part of the world, I make sure to relish every moment. Immerse yourself in the culture.  Explore new places.  Oh, and deinfitely try new foods!</p>
+            <br>
+            <p>Personally, I find it quite special - being able to explore somewhere new and learn about the world around us.  So, hopefully you get a little sense of adventure when you check out my top destinations below...</p>
+        </div>
+        <!-- Favourite Destintations Section -->
+        <section class="section-padding top-countries">
+          <h2 class="section-header">My Top Countries to Visit</h2>
+          <!-- Bootstrap Card -->
+          <div class="card first-card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-5 img-cover">
+                <img src="./images/thai-remote-comp.jpg" class="img-fluid rounded-top card-img-top" alt="Thai boat by the shore">
+              </div>
+              <div class="col-lg-7 card-info">
+                <div class="card-body">
+                  <h3 class="card-title">Thailand</h3>
+                  <p class="text-dark card-tips"><b>Favourite locations:</b> <em>Krabi, Koh Lak, Koh Lanta, Phuket</em></p>
+                  <p class="text-dark card-tips"><b>Favourite food/drink:</b> <em>Pad Thai, Green Curry, Glass Noodles, Fried Rice, Chang Beer</em></p>
+                  <p class="text-dark card-tips"><b>Top-Tip:</b> <em>Visit during Thai New Year for epic waterfights!</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap Card -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-5">
+                <img src="./images/nelson-comp.jpg" class="img-fluid rounded-top card-img-top" alt="Nelson scenery">
+              </div>
+              <div class="col-lg-7">
+                <div class="card-body">
+                  <h3 class="card-title">New Zealand</h3>
+                  <p class="text-dark card-tips"><b>Favourite locations:</b> <em>Queenstown, Rotorua, Bay of Islands</em></p>
+                  <p class="text-dark card-tips"><b>Favourite food/drink:</b> <em>New Zealand Lamb, Crayfish, Red Wine</em></p>
+                  <p class="text-dark card-tips"><b>Top-Tip:</b> <em>Take the time to learn about Maori history!</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap Card -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-5">
+                <img src="./images/zebra-comp.jpg" class="img-fluid rounded-top card-img-top" alt="Small group of zebra">
+              </div>
+              <div class="col-lg-7">
+                <div class="card-body">
+                  <h3 class="card-title">South Africa</h3>
+                  <p class="text-dark card-tips"><b>Favourite locations:</b> <em>Cape Town, Klassarie Nature Reserve, Stellenbosch</em></p>
+                  <p class="text-dark card-tips"><b>Favourite food/drink:</b> <em>Springbok, Bobotie, Potjiekos, Braai</em></p>
+                  <p class="text-dark card-tips"><b>Top-Tip:</b> <em>Don't fall asleep on morning game drives (lol!)</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap Card -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-5">
+                <img src="./images/auz-flag-comp.jpg" class="img-fluid rounded-top card-img-top" alt="Australian flag">
+              </div>
+              <div class="col-lg-7">
+                <div class="card-body">
+                  <h3 class="card-title">Australia</h3>
+                  <p class="text-dark card-tips"><b>Favourite locations:</b> <em>Noosa, Melbourne, Great Barrier Reef</em></p>
+                  <p class="text-dark card-tips"><b>Favourite food/drink:</b> <em>Kangaroo Burger, Bush Tucker, Vegemite</em></p>
+                  <p class="text-dark card-tips"><b>Top-Tip:</b> <em>It's massive, don't underestimate your travel time!</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap Card -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-5">
+                <img src="./images/vietnam-rice-comp.jpg" class="img-fluid rounded-top card-img-top" alt="Sapa staggered rice paddies">
+              </div>
+              <div class="col-lg-7">
+                <div class="card-body">
+                  <h3 class="card-title">Vietnam</h3>
+                  <p class="text-dark card-tips"><b>Favourite locations:</b> <em>Nihn-Bihn, Hoi An, Halong Bay, Sapa</em></p>
+                  <p class="text-dark card-tips"><b>Favourite food/drink:</b> <em>Pho (there's so many options!), Drip-coffee, Goi Cuon, Com Tam</em></p>
+                  <p class="text-dark card-tips"><b>Top-Tip:</b> <em>Experience an overnight train journey at least once</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap Card -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-5">
+                <img src="./images/monkey-com.jpg" class="img-fluid rounded-top card-img-top" alt="Monkey laying down">
+              </div>
+              <div class="col-lg-7">
+                <div class="card-body">
+                  <h3 class="card-title">Bali</h3>
+                  <p class="text-dark card-tips"><b>Favourite locations:</b> <em>Ubud, Nusa Dua</em></p>
+                  <p class="text-dark card-tips"><b>Favourite food/drink:</b> <em>Nasi Goreng, Beef Rendang, Chicken Cashew Stir-fry, Satay, Red Rice </em></p>
+                  <p class="text-dark card-tips"><b>Top-Tip:</b> <em>Stay in a guesthouse for a more authentic visit </em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Bootstrap Card -->
+          <div class="card mb-3">
+            <div class="row g-0">
+              <div class="col-lg-5">
+                <img src="./images/santorini-blue-comp.jpg" class="img-fluid rounded-top card-img-top" alt="View of Santorini">
+              </div>
+              <div class="col-lg-7">
+                <div class="card-body">
+                  <h3 class="card-title">Greece</h3>
+                  <p class="text-dark card-tips"><b>Favourite locations:</b> <em>Zante, Santorini, Katakolon, Kos</em></p>
+                  <p class="text-dark card-tips"><b>Favourite food/drink:</b> <em>Mythos Beer, Souvlaki, Gyros, Tsatziki, Halloumi</em></p>
+                  <p class="text-dark card-tips"><b>Top-Tip:</b> <em>Wear sunscreen in Summer.  It's real hot!</em></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Image Gallery Section -->
+        <section class="section-padding">
+          <h2 class="section-header">Travel Image Gallery</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+              <figure>
+                <img
+                src="./images/kotor-bay-comp.jpg"
+                class="w-100 shadow-1-strong rounded gallery-img"
+                alt="Kotor Bay"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Kotor Bay, Montenegro</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/cruise-sun-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="Sunset view from cruise ship"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Sunset views from the deck</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/nz-scene-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="New Zealand scenery"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Franz Josef, New Zealand</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/krabi-sea-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="Limestone karst in the sea"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Krabi, Thailand</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <figure>
+                <img
+                src="./images/thai-elephant-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="Elephant being fed at sactuary"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Elephant Sanctuary, Phuket</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/basketball-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="Basketball game"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Miami, Florida</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/split-tower-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="Split bell-tower staircase"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Split Bell Tower, Croatia</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/seals-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="Seal colony"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Cape Town, South Africa</figcaption>
+              </figure>
+            </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+              <figure>
+                <img
+                src="./images/port-mac-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="Panoramic coastal scene"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Port Macquarie, Australia</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/jewel-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="water feature inside shopping centre"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">The Jewel, Singapore</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/spices-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="Spices in a Dubai souk"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Dubai Souk, UAE</figcaption>
+              </figure>
+              <figure>
+                <img
+                src="./images/thai-dragon-comp.jpg"
+                class="w-100 shadow-1-strong rounded"
+                alt="dragon statue"
+                loading="lazy"
+              >
+              <figcaption class="mb-4 pt-1 text-muted text-center img-gallery-caption">Krabi, Thailand</figcaption>
+              </figure>
+            </div>
+          </div>
+          <a class="btn btn-primary page-btn mt-4" href="#" role="button"
+          >Back To Top</a
+        >
+        </section>
+        <!-- Footer -->
+        <footer class="text-white bg-dark">
+          Wanderlust - created using HTML || CSS || Bootstrap
+        </footer>
+    </main>
+    <!-- bootstrap script tag -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>

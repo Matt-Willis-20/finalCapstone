@@ -1,0 +1,543 @@
+/*
+----------------------------------------------
+GLOBAL STYLES
+----------------------------------------------
+*/
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: rgba(33, 37, 41, 0.94);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Headings and Paragraph styling */
+
+h1 {
+  font-size: 3rem;
+}
+
+h1,
+h2 {
+  color: white;
+  text-align: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0 0 0.25rem;
+}
+
+/* figure styling */
+
+figure {
+  margin: 0;
+}
+
+/* blockquote styling */
+
+blockquote {
+  margin: 0 auto;
+  max-width: 650px;
+}
+
+.blockquote-footer {
+  color: rgb(240, 240, 240);
+  font-weight: 300;
+  margin: -0.5rem 0 0 0;
+}
+
+/* table styling */
+
+table {
+  margin: 0 auto 2rem !important;
+  max-width: 550px;
+  text-align: center;
+}
+
+/* footer styling */
+
+footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  min-height: 70px;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+/* carousel styling */
+
+.carousel {
+  border-radius: 20px;
+  margin: 3rem 0;
+  overflow: hidden;
+}
+
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  padding-bottom: 1.5rem;
+}
+
+.carousel-indicators {
+  margin-bottom: 1.5rem;
+}
+
+/* card styling */
+
+.card {
+  background-color: rgb(250, 250, 250);
+  border: none;
+  margin: 3rem auto;
+  max-width: 1200px;
+  transition: 0.2s ease-in-out;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 100%;
+  justify-content: space-around;
+}
+
+.first-card {
+  margin-top: 0rem;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 8px rgba(66, 66, 66, 0.3);
+  transform:scale(1.02);
+}
+
+/* Section & hero section styling*/
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-header {
+  margin-bottom: 3rem;
+}
+
+.section-padding {
+  box-shadow: 0 12px 12px -15px rgba(15, 15, 15, 0.6);
+  margin: 0 auto;
+  max-width: 1100px;
+  padding: 3rem 1rem 2rem;
+}
+
+.hero {
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+  position: relative;
+}
+
+.hero__content-container {
+  background-color: rgba(33, 37, 41, 0.75);
+  border: 3px solid white;
+  box-shadow: inset 10px 10px 15px -10px rgba(0, 0, 0, 0.5),
+    5px 5px 5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 460px;
+  padding: 1.5rem;
+}
+
+.hero__pointer {
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.55);
+  border: 1px solid white;
+  border-radius: 10px;
+  bottom: 1rem;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  position: absolute;
+  width: 35px;
+  color: white;
+}
+
+/* button formatting (adding to Bootstrap Defaul  */
+
+.page-btn {
+  margin: 0 auto;
+}
+
+/* --------- GLOBAL MEDIA QUERIES ---------*/
+
+@media screen and (min-width: 525px) {
+  .section-padding {
+    padding: 2rem 3rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 3.75rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .section-padding {
+    padding: 3rem;
+  }
+
+  .section-header {
+    margin: 0 0 4rem;
+  }
+
+  .hero__content-container {
+    border: 5px solid white;
+    box-shadow: inset 10px 10px 15px -10px rgba(0, 0, 0, 0.5),
+      5px 5px 5px rgba(0, 0, 0, 0.3);
+    gap: 2rem;
+    max-width: 550px;
+    padding: 2.5rem;
+  }
+
+  blockquote p,
+  .hero__content-container p {
+    font-size: 1.4rem;
+    font-weight: 300;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .card img {
+    border-top-right-radius: 0 !important;
+    border-bottom-left-radius: 0.375rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 1.3em;
+  }
+
+  .section-padding {
+    padding: 4rem 0rem;
+  }
+
+  .hero__content-container {
+    border: 5px solid white;
+    box-shadow: inset 10px 10px 15px -10px rgba(0, 0, 0, 0.5),
+      5px 5px 5px rgba(0, 0, 0, 0.3);
+    gap: 2rem;
+    max-width: 920px;
+    padding: 3.5rem;
+  }
+}
+
+/*
+-------------------------------------------------------------------
+HOME PAGE (INDEX) STYLES
+-------------------------------------------------------------------
+*/
+
+.homepage-hero {
+  background-image: url("../images/hawaii-boat-comp.jpg");
+}
+
+/* Homepage introduction section styling */
+
+.introduction-row {
+  margin-left: 0;
+}
+
+.introduction-text p {
+  text-align: center;
+}
+
+.profile-img-container {
+  border-radius: 50%;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  padding: 0;
+}
+
+.profile-img-container img {
+  width: 100%;
+}
+
+/* Fun Fact Styling */
+
+.fun-fact {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgb(2, 204, 144);
+  border-radius: 15px;
+  padding: 1rem;
+}
+
+.fact-text {
+  color: rgb(2, 204, 144);
+  margin: 0;
+}
+
+.comments-section h3 {
+  color: white;
+  margin-top: 5rem;
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+#comment-btn {
+  margin-top: 1.5rem;
+}
+
+#comments {
+  min-height: 50px;
+  background-color: white;
+  padding: 1.5rem 1.75rem;
+}
+
+.comment-text {
+  color: black;
+  border-bottom: 1px solid grey;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.comment-text:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.form-control {
+  padding: 1.5rem;
+}
+
+/* --------- HOME PAGE MEDIA QUERIES ----------*/
+
+@media screen and (min-width: 575px) {
+  .introduction-text {
+    padding-left: 2rem;
+  }
+
+  .introduction-text p {
+    text-align: left;
+  }
+
+  .profile-img-container {
+    margin: 0;
+  }
+}
+
+/*
+-------------------------------------------------------------------
+TOP/FAVOURITE DESTINATIONS PAGE STYLES
+-------------------------------------------------------------------
+*/
+
+.favourite-hero {
+  background-image: url(../images/Thailand-pool-comp.jpg);
+}
+
+/*
+-------------------------------------------------------------------
+WISHLIST PAGE STYLES
+-------------------------------------------------------------------
+*/
+
+.wishlist-hero {
+  background-image: url(../images/hawaii-surf-comp.jpg);
+}
+
+/* Wishlist introduction section styling */
+
+.wishlist-intro__tips {
+  display: grid;
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+
+.wishlist-intro__tips li {
+  margin-top: 0.75rem;
+  font-size: 1.1rem;
+  padding-left: 0.5rem;
+}
+
+/* Vote section styling */
+
+.vote-section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.vote-section span {
+  margin-top: -1.5rem;
+}
+
+.vote-form,
+.vote-section span {
+  color: white;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  max-width: 750px;
+}
+
+.vote-form {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 2.5rem;
+  padding: 1.5rem 1.5rem 2rem;
+}
+
+.vote-form input {
+  margin: 1rem 0.5rem;
+}
+
+.vote-form button {
+  margin-top: 2rem;
+  padding: 0.5rem 1rem;
+  transition: 0.075s ease-in-out;
+}
+
+.vote-form button:hover {
+  transform:scale(1.02);
+}
+
+.vote-form button:active {
+  transform:scale(1.02);
+}
+
+/* --------- WISHLIST PAGE MEDIA QUERIES ---------*/
+
+@media screen and (min-width: 425px) {
+  .vote-form {
+    padding: 2rem 3rem 2.5rem;
+  }
+
+  .vote-form button {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wishlist-intro__tips li {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .wishlist-intro__tips li {
+    font-size: 1.3rem;
+  }
+}
+
+/*
+-----------------------------------------------------------------------
+SUBSCRIBE PAGE STYLES
+---------------------------------------------------------------------- 
+*/
+
+.subscribe-hero {
+  background-image: url(../images/cameron-highlands-comp.jpg);
+}
+
+.subscribe-intro p {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Subscribe page form styling */
+
+.subscribe-form {
+  color: white;
+}
+
+.input-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.subscribe-form input {
+  border: none;
+  padding: 0.3rem 0.5rem;
+  width: 100%;
+}
+
+/* Travel links styling */
+
+.travel-links {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.travel-links a {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  text-align: center;
+  transition: 0.08s ease-in-out;
+  text-decoration: none;
+}
+
+.travel-links a:hover {
+  border: 2px solid rgb(2, 204, 144);
+  background-color: rgba(2, 204, 144, 0.3);
+}
+
+.travel-links a:active {
+  transform:scale(1.02);
+}
+
+/* --------- SUBSCRIBE PAGE MEDIA QUERIES ---------- */
+
+@media screen and (min-width: 650px) {
+  .travel-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .travel-links a {
+    font-size: 1.3rem;
+    padding: 1rem 3.5rem;
+  }
+
+  .input-bar {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}

@@ -66,6 +66,9 @@
                 <a class="nav-link" href="./wishlist.html">Travel Wish List</a>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="./saved.html">Saved Items</a>
+              </li>
+              <li class="nav-item">
                 <a class="nav-link active" href="./subscribe.html">Subscribe</a>
               </li>
             </ul>
@@ -95,7 +98,7 @@
                 placeholder="example@email.com"
                 class="rounded"
               >
-              <button type="submit" class="btn btn-primary">Subscribe</button>
+              <button type="button" class="btn btn-primary" id="subscribe-btn">Subscribe</button>
             </div>
           </form>
         </div>
@@ -118,6 +121,25 @@
           time.
         </p>
       </div>
+      <section class="section-padding">
+        <h2 class="section-header">Contact Me</h2>
+        <p>If you would like to contact me directly, please use the form below and I'll back in touch as soon as I can.</p>
+        <form>
+          <div class="form-group">
+            <label for="senderEmail">Your email address:</label>
+            <input type="email" class="form-control" id="senderEmail" placeholder="name@example.com" required>
+          </div>
+          <div class="form-group">
+            <label for="name">Your name:</label>
+            <input class="form-control" id="name" placeholder="Enter your name here..." required>
+          </div>
+          <div class="form-group">
+            <label for="message">Your message:</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message here..." required></textarea>
+          </div>
+          <button type="button" class="btn btn-primary message-submit">Submit your message</button>  
+        </form>
+      </section>
       <!-- Travel website links section -->
       <section class="section-padding">
         <h2 class="section-header">
@@ -139,6 +161,7 @@
           >Back To Top</a
         >
       </section>
+      
       <!-- Footer -->
       <footer class="text-white bg-dark">
         Wanderlust - created using HTML || CSS || Bootstrap
@@ -150,5 +173,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script type='text/javascript' src='./Scripts/contact.js'></script>
   </body>
 </html>

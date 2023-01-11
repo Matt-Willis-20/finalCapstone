@@ -42,6 +42,7 @@ p {
 
 figure {
   margin: 0;
+  position: relative;
 }
 
 /* blockquote styling */
@@ -85,6 +86,10 @@ footer {
   overflow: hidden;
 }
 
+.carousel-item {
+  position: relative;
+}
+
 .carousel-caption {
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
@@ -103,6 +108,23 @@ footer {
   margin: 3rem auto;
   max-width: 1200px;
   transition: 0.2s ease-in-out;
+}
+
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+}
+
+.card-head h3 {
+  margin-bottom: 0;
+}
+
+.card-head button {
+  font-size: 0.75rem;
+  border: none;
+  padding: 0.2rem 0.4rem;
 }
 
 .card-body {
@@ -185,11 +207,61 @@ section {
   margin: 0 auto;
 }
 
+/* 'Like' button styling */
+
+.like-form {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 5;
+}
+
+.like-btn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  border: none;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+
+.like-btn i {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  width: 100%;
+  transition: 0.2s ease-in-out;
+}
+
+.like-btn:hover i{
+  transform: scale(1.15);
+}
+
+.liked i {
+  color: rgb(255, 255, 255);
+}
+
+/* forms and labels styling */
+
+label {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+
 /* --------- GLOBAL MEDIA QUERIES ---------*/
 
 @media screen and (min-width: 525px) {
   .section-padding {
     padding: 2rem 3rem;
+  }
+
+  .card-head button {
+    font-size: 0.9rem;
+    padding: 0.2rem 0.5rem;
   }
 }
 
@@ -227,6 +299,21 @@ section {
   .hero__content-container p {
     font-size: 1.4rem;
     font-weight: 300;
+  }
+
+  .like-form {
+    top: 10px;
+    right: 10px;
+  }
+  
+  .like-btn {
+    border-radius: 11px;
+    width: 36px;
+    height: 36px;
+  }
+  
+  .like-btn i {
+    font-size: 1.1rem;
   }
 }
 
@@ -336,7 +423,7 @@ HOME PAGE (INDEX) STYLES
 }
 
 .form-control {
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 /* --------- HOME PAGE MEDIA QUERIES ----------*/
@@ -419,6 +506,10 @@ WISHLIST PAGE STYLES
   margin: 1rem 0.5rem;
 }
 
+.vote-form label {
+  margin: 0.4rem 0;
+}
+
 .vote-form button {
   margin-top: 2rem;
   padding: 0.5rem 1rem;
@@ -457,6 +548,22 @@ WISHLIST PAGE STYLES
   }
 }
 
+
+/*
+-------------------------------------------------------------------
+SAVED CONTENT PAGE STYLES
+-------------------------------------------------------------------
+*/
+
+.saved-hero {
+  background-image: url(../images/hawaii-surf-comp.jpg);
+}
+
+.saved-content .section-header {
+  margin: 0 0 2rem;
+}
+
+
 /*
 -----------------------------------------------------------------------
 SUBSCRIBE PAGE STYLES
@@ -465,11 +572,6 @@ SUBSCRIBE PAGE STYLES
 
 .subscribe-hero {
   background-image: url(../images/cameron-highlands-comp.jpg);
-}
-
-.subscribe-intro p {
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 /* Subscribe page form styling */
@@ -482,7 +584,6 @@ SUBSCRIBE PAGE STYLES
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  margin-top: 0.5rem;
   width: 100%;
 }
 
@@ -520,6 +621,10 @@ SUBSCRIBE PAGE STYLES
 
 .travel-links a:active {
   transform:scale(1.02);
+}
+
+.message-submit {
+  margin-top: 1.5rem;
 }
 
 /* --------- SUBSCRIBE PAGE MEDIA QUERIES ---------- */

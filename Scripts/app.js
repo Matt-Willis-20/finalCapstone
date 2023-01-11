@@ -53,7 +53,7 @@ function saveItem(e) {
     // add this to the savedContent array
     savedContent.push(card);
     // output to the user how many items are in their saved items.
-    alert(`You have ${savedContent.length} items saved - go to 'Saved Items' to view them`);
+    alert(`You have ${savedContent.length} item(s) saved - go to 'Saved Items' to view them`);
     // save the savedContent object back to local storage
     localStorage.setItem("savedContent", JSON.stringify(savedContent))
 };

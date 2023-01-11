@@ -60,13 +60,16 @@
           >
             <ul class="navbar-nav gap-4">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" href="#">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./favourite.html">Top Destinations</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./wishlist.html">Travel Wish List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./saved.html">Saved Items</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="./subscribe.html">Subscribe</a>
@@ -81,7 +84,7 @@
       <!-- hero content -->
       <section class="hero saved-hero">
         <div class="hero__content-container rounded-4">
-          <h1 class="text-center">Your Content</h1>
+          <h1 class="text-center">Saved Content</h1>
           <figure class="text-center">
             <blockquote class="blockquote">
               <p>
@@ -101,16 +104,10 @@
           <i class="fa-solid fa-arrow-down-long"></i>
         </div>
       </section>
-      <div class="introduction section-padding">
-        <p>First and foremost, I count myself extremely fortunate and privileged to be able to travel. I'm ever-grateful that I can a) afford to travel (although I work hard to save) and b) have access to safe transport options. This should not be taken for granted!</p>
-        <br>
-        <p>So, when I do find myself in a different part of the world, I make sure to relish every moment. Immerse yourself in the culture.  Explore new places.  Oh, and deinfitely try new foods!</p>
-        <br>
-        <p>Personally, I find it quite special - being able to explore somewhere new and learn about the world around us.  So, hopefully you get a little sense of adventure when you check out my top destinations below...</p>
-    </div>
       <!-- Favourite Destintations Section -->
       <section class="section-padding saved-content">
         <h2 class="section-header">Your Saved Content</h2>
+        <div id="saved-content-container"></div>
         </section>
       <!-- Footer -->
       <footer class="text-white bg-dark">
@@ -123,5 +120,6 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <script type='text/javascript' src='./Scripts/loadingSavedContent.js'></script>
   </body>
 </html>

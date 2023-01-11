@@ -5,7 +5,7 @@ This project was one of the final capstone projects within the HyperionDev Web D
 
 It is based around a passion of mine - travel!
 
-I have used HTML, CSS, Bootstrap and JavaScript to create a responsive, interactive, and (hopefully) engaging website.  Session storage has been utilised to add and store comments and present 'saved' data to the user based on their actions.  The user can 'like' images across the site and they are able to submit forms for an email subscription and to send a message, albeit, without full backend fucntionality.
+I have used **HTML**, **CSS**, **Bootstrap** and **JavaScript** to create a responsive, interactive, and (hopefully) engaging website.  Session storage has been utilised to add and store comments and present 'saved' data to the user based on their actions.  The user can 'like' images across the site and they are able to submit forms for an email subscription and to send a message, albeit, without full backend fucntionality.
 
 
 ## Table of contents
@@ -21,15 +21,14 @@ I have used HTML, CSS, Bootstrap and JavaScript to create a responsive, interact
 
 ## Installation
 
-To install locally, you will need to clone the repository and 
+To install locally, you will need to clone the repository.  You can follow the guidance [here](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository).   
 
 
 
 ## Usage
 
 This is quite a visual website, so it is primarily designed for users to view content and images.
-That said, there are a number of ways the user can interact with the pages.
-The main functionality that a user can engage with includes:
+That said, there are a number of ways the user can interact with the pages.  The main functionality that a user can engage with includes:
 
 ### Adding comments on the Home Page
 
